@@ -1,0 +1,32 @@
+
+
+
+
+@media screen and (max-width:600px) {
+.personalProductImg{
+    width: 150px;
+    height: 150px;
+    display: none;
+    
+} 
+.personalPostImg.active{
+    display: none;
+}
+
+.personalProductImg.active{
+    width: 150px;
+    height: 150px;
+    display: block;
+}   
+.productWrapper{
+    display: none;
+    transition: 15s ease-in-out linear;
+    margin: 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0.1);
+}  
+.productWrapper.active{
+    display: block;
+    
+} 
+}

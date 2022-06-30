@@ -1,0 +1,31 @@
+
+.contacted{
+   color: #333;
+    
+}
+.contactedFriendImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contactedFriend{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.contactedFriendName{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+

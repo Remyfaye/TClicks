@@ -1,0 +1,141 @@
+.topbarContainer{
+    height: 65px;
+    width: 100%;
+    background-color: #bc17ee;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 8px 0;
+}
+
+.logo{
+    font-size: 27px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.topbarLeft{
+    flex: 3;
+    
+}
+
+
+.topbarCenter{
+    flex: 5;
+    
+}
+.searchbar{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.searchIcon{
+    font-size: 20px  !important;
+    margin-left: 10px;
+}
+.searchInput{
+    border: none;
+    width: 80%;
+}
+
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.topbarLink{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.topbarIcons{
+    display: flex;
+}
+.topbarIconItem{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.topbarIconBadge{
+    position: absolute;
+    width: 19px;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    justify-content: center;
+    height: 15px;
+    font-size: 12px;
+    background-color: red;
+    border-radius: 60%;
+}
+.topbarImg{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.topbarSendIcon{
+   visibility: hidden;
+   margin-right: 10px;
+   background-color: #f1f1f1;
+   padding: 10px;
+   border-radius: 50%;
+   font-size: 30px;
+}
+
+@media screen and (max-width:600px){
+    .logo{
+        color: #bc17ee;
+        font-size: 35px;
+    }
+    .topvbarRightMobile{
+        display: flex;
+    }
+    .topbarSendIcon{
+        visibility: visible;
+     }
+    
+    .topbarLinks{
+        display: none;
+    }
+    .topbarCenter{
+        display: none;
+    }
+    .topbarRight{
+        display: none;
+    }
+    
+    .topbarImg{
+        display: none;
+        width: 70px;
+        height: 70px;
+
+    }
+    .topbarContainer{
+        background-color: #fff;
+       
+        display:flex;
+        padding: 2px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+   
+}
+
+
+
+
+
+
+
+

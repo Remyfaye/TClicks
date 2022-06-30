@@ -1,0 +1,14 @@
+
+
+.revised{
+    position: relative;
+}
+
+.greenDot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(97, 228, 97);
+    right: 10px;
+}

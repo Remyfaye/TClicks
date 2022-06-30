@@ -1,0 +1,79 @@
+
+
+@media screen and (max-width:600px){
+/*----------------------top--------*/
+.personalTop{
+    display: flex;
+    
+}
+.personalImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.personalDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.personalName{
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.personalBioListItem{
+    list-style: none;
+    margin: 8px 0;
+    font-family: 'blaka',cursive;
+}
+.personalTopRight{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.folllowingDetails{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.followingDetail{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------center----------------*/
+.personalCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.personalCenterList{
+    margin: 0 20px;
+    font-size: 98px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.personalCenterList:hover{
+    border-bottom: 2px solid black;
+    
+    
+}
+
+/*-------------------bottom------------*/ 
+.personalBottom{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}   
+.bottomPost{
+    visibility: hidden;
+}  
+
+
+
+
+}
