@@ -12,9 +12,13 @@
 
 @media screen and (max-width:600px){
 
-    .feed{
-        margin-bottom: 45px;
+    .feedWrapper{
+       
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
+    
     
 }
 

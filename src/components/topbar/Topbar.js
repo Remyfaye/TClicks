@@ -3,24 +3,34 @@ import './topbar.css'
 import SearchIcon from '@mui/icons-material/Search'
 import PersonIcon from '@mui/icons-material/Person'
 import ChatIcon from '@mui/icons-material/Chat'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import {useState} from 'react'
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SendIcon from '@mui/icons-material/Send';
+import {Link} from 'react-router-dom'
 
-export default function Topbar(props) {
 
+export default function Topbar({toggle,share,logo}) {
     
+    const [searchState,setSearchState] = useState(false)
+    function displaySearch(){
+        
+        setSearchState(searchState => !searchState)
+    }
+    let searchToggle = searchState ? ' active' : ' '
+
 
     return (      
-        <div className='topbarContainer'>
+        <div className={`topbarContainer${toggle}`}>
             <div className='topbarLeft'>
-                <span className='logo'>Tclicks</span>
+                <span className='logo'>{logo}</span>
                 
             </div>
 
-            <div className='topbarCenter'>
+            <div className={`topbarCenter${searchToggle}`}>
                 <div className='searchbar'>
-                    <SearchIcon className='searchIcon'/>
+                    <SearchIcon className='searchIcon'
+                    />
                     <input placeholder='search for friends,post or video' 
                     className='searchInput'/>
                 </div>
@@ -52,17 +62,23 @@ export default function Topbar(props) {
                     
                 </div>
 
-                <img src='/assets/persons/1.jpeg' className='topbarImg'/>
+               <Link to = '/personal'>
+               <img src='/assets/persons/1.jpeg' className='topbarImg'/>
+               </Link>
             </div>
 
             <div className='topvbarRightMobile'>
                 <div className='topbarIconItem'>
-                    <SendIcon className='topbarSendIcon'/>
+                    <SearchIcon className='topbarSearchIcon'
+                    onClick={displaySearch}/>
                 </div>
 
                 <div className='topbarIconItem'>
-                    <SearchIcon className='topbarSendIcon'/>
+                    <SendIcon className='topbarSendIcon'
+                    onClick={share}/>
                 </div>
+
+                
 
                 
             </div>

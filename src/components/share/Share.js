@@ -6,9 +6,9 @@ import LabelIcon from '@mui/icons-material/Label';
 import RoomIcon from '@mui/icons-material/Room';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
-export default function Share(){
+export default function Share({tol}){
     return(
-        <div className='share'>
+        <div className={`share${tol}`}>
             <div className='shareWrapper'>
 
                 <div className='shareTop'>

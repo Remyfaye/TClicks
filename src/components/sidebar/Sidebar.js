@@ -9,36 +9,43 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import Online from '../online/Online'
 import {Onlinee} from '../../onlineData'
 
+import HomeIcon from '@mui/icons-material/Home';
+import ExploreIcon from '@mui/icons-material/Explore';
+import MessageIcon from '@mui/icons-material/Message';
+import {useState} from 'react'
+import {Link} from 'react-router-dom'
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+
 export default function Sidebar(){
     return(
         <div className='sidebar'>
             <div className='sidebarWrapper'>
 
                 <ul className='sidebarList'>
-                    <li className='sidebarListItem'>
-                        <RssFeedIcon className='sidebarIcon'/>
-                        <span className='sidebarListItemText'>Feed</span>
-                    </li>
-                    <li className='sidebarListItem'>
+                    <Link to = '/home' className='sidebarListItem'>
+                        <HomeIcon className='sidebarIcon'/>
+                        <span className='sidebarListItemText'>Home</span>
+                    </Link>
+                    <Link to = '/messages' className='sidebarListItem'>
                         <ChatIcon className='sidebarIcon'/>
                         <span className='sidebarListItemText'>Chats</span>
-                    </li>
+                    </Link>
                     <li className='sidebarListItem'>
                         <VideoLibraryIcon className='sidebarIcon'/>
                         <span className='sidebarListItemText'>Videos</span>
                     </li>
-                    <li className='sidebarListItem'>
-                        <ContactSupportIcon className='sidebarIcon'/>
-                        <span className='sidebarListItemText'>Questions</span>
-                    </li>
+                    <Link to = '/explore' className='sidebarListItem'>
+                        <ExploreIcon className='sidebarIcon'/>
+                        <span className='sidebarListItemText'>Explore</span>
+                    </Link>
                     <li className='sidebarListItem'>
                         <EventIcon className='sidebarIcon'/>
                         <span className='sidebarListItemText'>Events</span>
                     </li>
-                    <li className='sidebarListItem'>
-                        <SchoolIcon className='sidebarIcon'/>
-                        <span className='sidebarListItemText'>Courses</span>
-                    </li>
+                    <Link to = '/tmart' className='sidebarListItem'>
+                        <LocalGroceryStoreIcon className='sidebarIcon'/>
+                        <span className='sidebarListItemText'>Tmart</span>
+                    </Link>
                     
                 </ul>
 

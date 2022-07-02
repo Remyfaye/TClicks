@@ -41,7 +41,7 @@ export const Posts = [
     {
         id:1,
         
-        desc:'so cute!!!',
+        desc:'So cute!!! this is Your sign to get Down to the animal shelter and adopt a puppy',
         photo:'assets/posts/7.jpeg',
         date:'10hrs ago',
         userId:1,
@@ -54,6 +54,16 @@ export const Posts = [
         id:2,
         desc:'Lover of good food',
         photo:'assets/posts/1.jpeg',
+        date:'2weeks ago',
+        userId:2,
+        like:2,
+        dislike:0,
+        comment:60
+    },
+    {
+        id:2,
+        desc:'Try dey Enjoy Life. Problem No dey Finsh at all',
+        
         date:'2weeks ago',
         userId:2,
         like:2,

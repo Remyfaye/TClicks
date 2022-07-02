@@ -82,13 +82,30 @@
     border-radius: 50%;
     object-fit: cover;
 }
-.topbarSendIcon{
+.topbarSearchIcon{
    visibility: hidden;
-   margin-right: 10px;
-   background-color: #f1f1f1;
+   margin-left: 20px;
+   background-color: rgb(226, 188, 253);
    padding: 10px;
    border-radius: 50%;
    font-size: 30px;
+}
+.topbarSendIcon{
+    visibility: hidden;
+    margin-right: 10px;
+    background-color: rgb(226, 188, 253);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+ }
+
+.topbarMenuIcon{
+    visibility: hidden;
+    
+    background-color: rgb(226, 188, 253);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
 }
 
 @media screen and (max-width:600px){
@@ -99,15 +116,40 @@
     .topvbarRightMobile{
         display: flex;
     }
-    .topbarSendIcon{
+    .topbarSearchIcon{
         visibility: visible;
+       
+     }
+     .topbarSendIcon{
+        visibility: visible;
+        
      }
     
     .topbarLinks{
         display: none;
     }
+    .searchIcon{
+        visibility: hidden;
+    }
     .topbarCenter{
         display: none;
+    }
+    .topbarCenter.active{
+        display: block;
+    }
+    .searchbar.active{
+        display: block;
+    }
+    .searchbar{
+        display:none;
+        background-color: #f0f2f5;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-right: 30px;
+    }
+    .searchInput{
+        background-color: transparent;
     }
     .topbarRight{
         display: none;
@@ -123,11 +165,14 @@
         background-color: #fff;
        
         display:flex;
-        padding: 2px;
+        padding: 4px;
         align-items: center;
         justify-content: space-between;
     }
-    
+    .topbarContainer.explore{
+        margin-bottom: 70px;
+       
+    }
     
    
 }

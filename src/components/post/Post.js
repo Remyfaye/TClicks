@@ -26,7 +26,7 @@ export default function Post({post}){
         setIsDisliked(!isDisliked)
     }
     return(
-        <div className='post'>
+        <div >
             <div className='postWrapper'>
 
                 <div className='postTop'>

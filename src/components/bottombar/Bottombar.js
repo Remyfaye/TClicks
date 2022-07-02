@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom'
 
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
-export default function Bottombar(){
+export default function Bottombar(props){
 
     const [btnState, setBtnState] = useState(false);
 
@@ -19,8 +19,7 @@ export default function Bottombar(){
         console.log('hi')
     }
 
-  
-    let rightbarActive = btnState ? ' active': ''
+    
     return(
         
         <div className='bottom'>
@@ -30,22 +29,24 @@ export default function Bottombar(){
                 <div className='bottomList'>
 
                     <div className='botttomListItem'>
-                        <Link to = '/'><HomeIcon className='bottonIcon'/></Link>
+                        <Link to = '/home'><HomeIcon className='bottonIcon'/></Link>
                         <span className='bottomText'>Home</span>
                     </div>
 
                     <div className='botttomListItem'>
-                    <Link to = '/'><MessageIcon className='bottonIcon'/></Link>
+                    <Link to = '/messages'><MessageIcon className='bottonIcon'/></Link>
                         <span className='bottomText'>Messages</span>
                     </div>
 
                     <div className='botttomListItem'>
-                    <Link to = '/'><ExploreIcon className='bottonIcon'/></Link>
+                    <Link to = '/explore'>
+                        <ExploreIcon className='bottonIcon' onClick={props.change}/>
+                    </Link>
                         <span className='bottomText'>Explore</span>
                     </div>
 
                     <div className='botttomListItem'>
-                    <Link to = '/'><LocalGroceryStoreIcon className='bottonIcon'/></Link>
+                    <Link to = '/tmart'><LocalGroceryStoreIcon className='bottonIcon'/></Link>
                         <span className='bottomText'>Tmart</span>
                     </div>
 

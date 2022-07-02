@@ -10,6 +10,7 @@ import {ContactedData} from '../../contactedList'
 import { useMediaQuery } from '@mui/material'
 import Status from '../status/Status'
 
+
 //---------------------personal page---------------------------- 
 //personal page icons
 
@@ -25,17 +26,34 @@ import PersonalPosts from '../personalPosts/PersonalPosts'
 //personal page products
 import {PersonalProductsData} from '../../personalProductsData'
 import PersonalProducts from '../personalProducts/PersonalProducts'
+import Home from '../../pages/home/Home'
 
-export default function Feed(){
+//--------------------------------mart page-------------------------
+//shop page icons
+/*import WatchRoundedIcon from '@mui/icons-material/WatchRounded';
+import RollerSkatingRoundedIcon from '@mui/icons-material/RollerSkatingRounded';
+import GirlRoundedIcon from '@mui/icons-material/GirlRounded';
+import ManRoundedIcon from '@mui/icons-material/ManRounded';
+import CasesRoundedIcon from '@mui/icons-material/CasesRounded';*/
+import ShopFeed from '../shopfeed/ShopFeed'
+
+//---------------------------explore page-------------------
+import ExploreFeed from '../explorefeed/ExploreFeed'
+
+//---------------------------explore page-------------------
+import MessageFeed from '../messagefeed/MessageFeed'
+
+
+export default function Feed({personal,stoggle,home,tmart,explore,messages}){
     
 
     const HomeFeed = () => {
         return(
             <div>
 
-              
+                    <Share tol={stoggle}/>
                     <Status />
-                
+                    
                
                                 
                 {Posts.map((p) => (
@@ -47,15 +65,47 @@ export default function Feed(){
                 
     }
 
-    const ProfileFeed = ()=>{
+    const MartFeed = ()=>{
         return(
-            <div>
-                
+            <div className='shop'>
+                <div className='shopWrapper'>
+
+                   <ShopFeed/>
+
+                    
+                </div>
             </div>
         )
     }
 
-    const MobileFeed = () => {
+    const ExFeed = ()=>{
+        return(
+            <div className='explore'>
+                <div className='exploreWrapper'>
+
+                   <ExploreFeed/>
+
+                    
+                </div>
+            </div>
+        )
+    }
+
+    const MessagesFeed = ()=>{
+        
+        return(
+            <div className='explore'>
+                <div className='exploreWrapper'>
+                    
+                   <MessageFeed />
+
+                    
+                </div>
+            </div>
+        )
+    }
+
+    const PersonalFeed = () => {
         const [btnProductState, setBtnProductState] = useState(false)
         const [btnPostState, setBtnPostState] = useState(false)
 
@@ -171,10 +221,34 @@ export default function Feed(){
             </div>
         )
     }
+
+    const DisplayFeed = ()=>{
+        if(home){
+            return(<HomeFeed/>)
+            
+        }
+        else if(personal){
+            return(<PersonalFeed/>)
+        }
+        else if(explore){
+            return(<ExFeed/>)
+        }
+        else if(tmart){
+            return(<MartFeed/>)
+        }
+        else if(messages){
+            return(<MessagesFeed/>)
+        }
+        else{
+            return(<Home/>)
+        }
+        
+    }
     return(
+        
         <div className='feed'>
             <div className='feedWrapper'>
-                <MobileFeed/>
+            <DisplayFeed/>
             
             </div>
         </div>

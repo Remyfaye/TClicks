@@ -29,6 +29,7 @@
     list-style: none;
 }
 .sidebarListItem{
+    text-decoration: none;
     display: flex;
     align-items: center;
     margin-bottom: 20px;

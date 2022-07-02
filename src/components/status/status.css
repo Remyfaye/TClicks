@@ -1,5 +1,12 @@
 
 
+
+.status{
+    display: none;
+}
+
+
+@media screen and (max-width:600px){
 .statusImg{
     width: 95px;
     height: 95px;
@@ -11,9 +18,12 @@
 .statusList{
     display: flex;
     overflow-x: scroll;
-      
+    margin-bottom: 90px;
+    margin-top: 10px;
 }
-
+.status{
+    display: block;
+}
 
 ::-webkit-scrollbar{
     height: 5px;
@@ -23,7 +33,7 @@
 }
 
 
-
+}
 
 
 
