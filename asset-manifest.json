@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/https//Remyfaye.github.io/TClicks/static/css/main.cf68d86c.css",
+    "main.js": "/https//Remyfaye.github.io/TClicks/static/js/main.2ca1cecb.js",
+    "static/media/kettle.mp4": "/https//Remyfaye.github.io/TClicks/static/media/kettle.11cc9cb1315de2b82f68.mp4",
+    "static/media/street.mp4": "/https//Remyfaye.github.io/TClicks/static/media/street.842e6447484cefe16bce.mp4",
+    "static/media/woman.mp4": "/https//Remyfaye.github.io/TClicks/static/media/woman.ffc725a5b6bd619f2711.mp4",
+    "index.html": "/https//Remyfaye.github.io/TClicks/index.html",
+    "main.cf68d86c.css.map": "/https//Remyfaye.github.io/TClicks/static/css/main.cf68d86c.css.map",
+    "main.2ca1cecb.js.map": "/https//Remyfaye.github.io/TClicks/static/js/main.2ca1cecb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf68d86c.css",
+    "static/js/main.2ca1cecb.js"
+  ]
+}
