@@ -16,7 +16,7 @@ function App() {
       
     <BrowserRouter>
       <Routes>
-        <Route path='/github.io/TClicks' element={<Login/>} />
+        <Route path='/TClicks' element={<Login/>} />
         <Route path='home' element={<Home/>} />
         <Route path='/messages' element={<Messages/>} />
         <Route path='/personal' element={<Personal/>} />
@@ -27,6 +27,7 @@ function App() {
     
         
   </BrowserRouter>
+
 
            
    
