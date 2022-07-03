@@ -4,12 +4,14 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import CommentIcon from '@mui/icons-material/Comment';
-import {Users} from '../../dummyData'
-import {useState} from 'react'
+import {Users} from '../../dummyData';
+import {useState} from 'react';
+import image from '../assets/posts/2.jpeg'
+
 
 export default function Post({post}){
     const user = Users.filter((u) => (u.id === post.userId))
-    console.log(user[0].username)
+    console.log(user[0].id)
 
     const [like,setLike] = useState(post.like)
     const [isLiked,setIsLiked] = useState(false)
@@ -32,9 +34,9 @@ export default function Post({post}){
                 <div className='postTop'>
 
                     <div className='postTopLeft'>
-                        <img alt='' src={user[0].profilepicture} className='postProfileImg'/>
+                        <img alt='' src={user.profilepicture} className='postProfileImg'/>
                         <span className='postUsername'>
-                            {user[0].username}
+                            {user.username}
                         </span>                        
                     </div>
 
@@ -44,8 +46,9 @@ export default function Post({post}){
                 </div>
 
                 <div className='postCenter'>
-                    <span className='postText'>{post?.desc}</span>
-                    <img alt='' src={post.photo} className='postImg'/>
+                    <span className='postText'>{post.desc}</span>
+                    <span className='postText'>{`'${post.photo}'`} </span>
+                    <img  alt='' src={image} className='postImg'/>
                 </div>
 
                 <div className='postBottom'>

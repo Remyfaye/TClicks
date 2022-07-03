@@ -1,11 +1,11 @@
 
-
+import image2 from '../assets/persons/3.jpeg'
 export default function MessagesList({chat,toggle}){
     return(
         <div className={`chatListItem${toggle}`}>
 
             <div className="chatLeft">
-                <img src={chat.img} className="chatLeftImg"/>
+                <img src={image2} className="chatLeftImg"/>
             
 
                 <div className="chatCenter">

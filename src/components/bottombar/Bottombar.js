@@ -7,7 +7,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import {useState} from 'react'
 
 import {Link} from 'react-router-dom'
-
+import image1 from '../assets/persons/1.jpeg'
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
 export default function Bottombar(props){
@@ -45,10 +45,6 @@ export default function Bottombar(props){
                         <span className='bottomText'>Explore</span>
                     </div>
 
-                    <div className='botttomListItem'>
-                    <Link to = '/tmart'><LocalGroceryStoreIcon className='bottonIcon'/></Link>
-                        <span className='bottomText'>Tmart</span>
-                    </div>
 
                     
                 
@@ -56,7 +52,7 @@ export default function Bottombar(props){
                     
                     <Link to = '/personal'><img alt='' 
                     className='bottomProfileImg' 
-                    src='assets/persons/1.jpeg'
+                    src={image1}
                     /></Link>
                     
 
@@ -64,4 +60,4 @@ export default function Bottombar(props){
             </div>
         </div>
     )
-}
+}np

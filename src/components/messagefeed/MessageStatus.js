@@ -1,5 +1,5 @@
 
-
+import image2 from '../assets/persons/6.jpeg'
 export default function MessageStatus({chat,status,toggle}){
     return(
         <div>
@@ -8,7 +8,7 @@ export default function MessageStatus({chat,status,toggle}){
             
 
             <div className="chatLeft">
-                <img src={chat.img} className="chatLeftImg"/>
+                <img src={image2} className="chatLeftImg"/>
             
 
                 <div className="chatCenter">

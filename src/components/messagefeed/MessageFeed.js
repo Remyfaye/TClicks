@@ -5,6 +5,7 @@ import MessageStatus from './MessageStatus'
 import {MessageDataItem} from '../../messageData'
 import './messagefeed.css'
 import {useState} from 'react'
+import image2 from '../assets/persons/1.jpeg'
 
 export default function MessageFeed(status){
 
@@ -44,7 +45,7 @@ export default function MessageFeed(status){
 
                     <div className='statusTop'>
                         <div className='addStatus'>
-                            <img src='assets/persons/1.jpeg' 
+                            <img src={image2} 
                             className='statusProfileImg'/>
                             <div className='greenDott'>+</div>
                         </div>

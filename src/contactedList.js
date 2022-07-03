@@ -21,33 +21,25 @@ export const ContactedData = [
         profilepicture:'assets/persons/5.jpeg',
         username:'Alex Durden'
     },
+   
+   
     {
         id:5,
         profilepicture:'assets/persons/4.jpeg',
         username:'Gary Duty'
     },
     {
-        id:5,
-        profilepicture:'assets/persons/4.jpeg',
-        username:'Gary Duty'
-    },
-    {
-        id:5,
-        profilepicture:'assets/persons/4.jpeg',
-        username:'Gary Duty'
-    },
-    {
-        id:5,
+        id:6,
         profilepicture:'assets/persons/8.jpeg',
         username:'Gary Duty'
     },
     {
-        id:5,
+        id:7,
         profilepicture:'assets/persons/3.jpeg',
         username:'Gary Duty'
     },
     {
-        id:5,
+        id:8,
         profilepicture:'assets/persons/4.jpeg',
         username:'Gary Duty'
     },

@@ -1,3 +1,5 @@
+
+
 export const Users = [
     {
         id:1,
@@ -31,18 +33,21 @@ export const Users = [
     },
     {
         id:7,
-        profilepicture:'assets/persons/2.jpeg',
+        profilepicture:'/assets/persons/2.jpeg',
         username:'Tom Hanks'
     }
     
 ]
 
+
+
+
 export const Posts = [
     {
-        id:1,
+        
         
         desc:'So cute!!! this is Your sign to get Down to the animal shelter and adopt a puppy',
-        photo:'assets/posts/7.jpeg',
+        photo:'assets/posts/1.jpeg',
         date:'10hrs ago',
         userId:1,
         like:2,
@@ -51,7 +56,7 @@ export const Posts = [
     },
 
     {
-        id:2,
+        
         desc:'Lover of good food',
         photo:'assets/posts/1.jpeg',
         date:'2weeks ago',
@@ -60,18 +65,9 @@ export const Posts = [
         dislike:0,
         comment:60
     },
+    
     {
-        id:2,
-        desc:'Try dey Enjoy Life. Problem No dey Finsh at all',
         
-        date:'2weeks ago',
-        userId:2,
-        like:2,
-        dislike:0,
-        comment:60
-    },
-    {
-        id:3,
         desc:'in the Gymmmmm',
         photo:'assets/posts/3.jpeg',
         date:'1minute ago',
@@ -81,7 +77,7 @@ export const Posts = [
         comment:123
     },
     {
-        id:4,
+        
         desc:'work smarter',
         photo:'assets/posts/9.jpeg',
         date:'3days ago',
@@ -91,7 +87,7 @@ export const Posts = [
         comment:213
     },
     {
-        id:5,
+        
         desc:'lover of jelly fishes!!',
         photo:'assets/posts/5.jpeg',
         date:'1hr ago',
@@ -101,7 +97,7 @@ export const Posts = [
         comment:221
     },
     {
-        id:6,
+        
         desc:'Religion over all',
         photo:'assets/posts/6.jpeg',
         date:'10hrs ago',
