@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Tclicks/static/css/main.cf68d86c.css",
-    "main.js": "/Tclicks/static/js/main.927c1124.js",
-    "static/media/kettle.mp4": "/Tclicks/static/media/kettle.11cc9cb1315de2b82f68.mp4",
-    "static/media/street.mp4": "/Tclicks/static/media/street.842e6447484cefe16bce.mp4",
-    "static/media/woman.mp4": "/Tclicks/static/media/woman.ffc725a5b6bd619f2711.mp4",
-    "index.html": "/Tclicks/index.html",
-    "main.cf68d86c.css.map": "/Tclicks/static/css/main.cf68d86c.css.map",
-    "main.927c1124.js.map": "/Tclicks/static/js/main.927c1124.js.map"
+    "main.css": "/github.io/TClicks/static/css/main.cf68d86c.css",
+    "main.js": "/github.io/TClicks/static/js/main.e5c60cf3.js",
+    "static/media/kettle.mp4": "/github.io/TClicks/static/media/kettle.11cc9cb1315de2b82f68.mp4",
+    "static/media/street.mp4": "/github.io/TClicks/static/media/street.842e6447484cefe16bce.mp4",
+    "static/media/woman.mp4": "/github.io/TClicks/static/media/woman.ffc725a5b6bd619f2711.mp4",
+    "index.html": "/github.io/TClicks/index.html",
+    "main.cf68d86c.css.map": "/github.io/TClicks/static/css/main.cf68d86c.css.map",
+    "main.e5c60cf3.js.map": "/github.io/TClicks/static/js/main.e5c60cf3.js.map"
   },
   "entrypoints": [
     "static/css/main.cf68d86c.css",
-    "static/js/main.927c1124.js"
+    "static/js/main.e5c60cf3.js"
   ]
 }
