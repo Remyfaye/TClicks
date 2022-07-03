@@ -16,7 +16,7 @@ function App() {
       
     <BrowserRouter>
       <Routes>
-        <Route path='/TClicks' element={<Login/>} />
+        <Route path='/' element={<Login/>} />
         <Route path='home' element={<Home/>} />
         <Route path='/messages' element={<Messages/>} />
         <Route path='/personal' element={<Personal/>} />
