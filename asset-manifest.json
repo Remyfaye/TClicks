@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/TClicks/static/css/main.c8baf471.css",
-    "main.js": "/TClicks/static/js/main.c26042eb.js",
+    "main.css": "/TClicks/static/css/main.86e48bbd.css",
+    "main.js": "/TClicks/static/js/main.644dce8c.js",
     "static/media/kettle.mp4": "/TClicks/static/media/kettle.11cc9cb1315de2b82f68.mp4",
     "static/media/street.mp4": "/TClicks/static/media/street.842e6447484cefe16bce.mp4",
     "static/media/woman.mp4": "/TClicks/static/media/woman.ffc725a5b6bd619f2711.mp4",
-    "static/media/4.jpeg": "/TClicks/static/media/4.6f75d595f549ac9a9a0c.jpeg",
+    "static/media/4.jpeg": "/TClicks/static/media/4.d167328f01a11afbdf61.jpeg",
     "static/media/8.jpeg": "/TClicks/static/media/8.d1d76a9949ec05a60966.jpeg",
+    "static/media/1.jpg": "/TClicks/static/media/1.60fd1b24cee2849ce44b.jpg",
     "static/media/9.jpeg": "/TClicks/static/media/9.4a6b8af77e83e3d874e6.jpeg",
+    "static/media/5.jpg": "/TClicks/static/media/5.a21810060c4125d2521e.jpg",
+    "static/media/2.jpg": "/TClicks/static/media/2.ba11518b56a67750cca8.jpg",
     "static/media/11.jpeg": "/TClicks/static/media/11.2e453687532902d85952.jpeg",
+    "static/media/3.jpg": "/TClicks/static/media/3.b2f958dc41647c7880a4.jpg",
     "static/media/6.jpeg": "/TClicks/static/media/6.814f3ba73efe10b34b02.jpeg",
     "static/media/1.jpeg": "/TClicks/static/media/1.a39311dd62019c14d5f6.jpeg",
+    "static/media/4.jpg": "/TClicks/static/media/4.952c9da66564e87b529f.jpg",
     "static/media/10.jpeg": "/TClicks/static/media/10.d380a68adc3e7c056b5c.jpeg",
+    "static/media/6.jpg": "/TClicks/static/media/6.f07abfce046063e26c53.jpg",
+    "static/media/5.jpeg": "/TClicks/static/media/5.59149aacf69ae6cdf2aa.jpeg",
     "static/media/2.jpeg": "/TClicks/static/media/2.0b2448bf4550d53b40ce.jpeg",
     "static/media/3.jpeg": "/TClicks/static/media/3.77fcbb64929b77b15b81.jpeg",
-    "static/media/5.jpeg": "/TClicks/static/media/5.59149aacf69ae6cdf2aa.jpeg",
     "static/media/7.jpeg": "/TClicks/static/media/7.17fff8a3299a339e7b85.jpeg",
     "index.html": "/TClicks/index.html",
-    "main.c8baf471.css.map": "/TClicks/static/css/main.c8baf471.css.map",
-    "main.c26042eb.js.map": "/TClicks/static/js/main.c26042eb.js.map"
+    "main.86e48bbd.css.map": "/TClicks/static/css/main.86e48bbd.css.map",
+    "main.644dce8c.js.map": "/TClicks/static/js/main.644dce8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8baf471.css",
-    "static/js/main.c26042eb.js"
+    "static/css/main.86e48bbd.css",
+    "static/js/main.644dce8c.js"
   ]
 }
