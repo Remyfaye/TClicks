@@ -5,8 +5,10 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import CommentIcon from '@mui/icons-material/Comment';
 import {Users} from '../../dummyData';
+import {people} from '../../People';
+import {Posts} from '../../People';
 import {useState} from 'react';
-import image from '../assets/posts/2.jpeg'
+import image from '../../assets/posts/2.jpeg'
 
 
 export default function Post({post}){
@@ -29,56 +31,69 @@ export default function Post({post}){
     }
     return(
         <div >
-            <div className='postWrapper'>
 
-                <div className='postTop'>
+            {Posts.map((post)=>(
 
-                    <div className='postTopLeft'>
-                        <img alt='' src={user.profilepicture} className='postProfileImg'/>
-                        <span className='postUsername'>
-                            {user.username}
-                        </span>                        
+                <div className='postWrapper'
+                style={{backgroundImage:`url('${post.photo}')`}}>
+
+                     <div className='postTop'>
+
+        <div className='postTopLeft'>
+            <img alt='' src={post.profilePicture} className='postProfileImg'/>
+            <span className='postUsername'>
+                {post.username}
+            </span>                        
+        </div>
+
+        <div className='postTopRight'>
+            <MoreVertIcon/>
+        </div>
                     </div>
 
-                    <div className='postTopRight'>
-                        <MoreVertIcon/>
-                    </div>
-                </div>
+    
 
-                <div className='postCenter'>
-                    <span className='postText'>{post.desc}</span>
-                    <span className='postText'>{`'${post.photo}'`} </span>
-                    <img  alt='' src={image} className='postImg'/>
-                </div>
+                    <div className='postBottom'>
 
-                <div className='postBottom'>
+        <div className='postBottomLeft'>
 
-                    <div className='postBottomLeft'>
-
-                        <div className='favorite'>
-                            <FavoriteIcon className='likeIcon' onClick={likeHandler}/>
-                            <span className='likeNumber'>{like}</span>
-                        </div>
-                        
-                        <div className='favorite'>
-                            <ThumbDownAltIcon className='likeIcon' onClick={dislikeHandler}/>
-                            <span className='likeNumber'>{dislike}</span>
-                        </div>
-
-                        <div className='favorite'>
-                            <CommentIcon className='likeIcon'/>
-                            <span className='likeNumber'>{post.comment}</span>
-                        </div>
-                        
-                    </div>
-
-                    <div className='postBottomRight'>
-                    <span className='postDate'>{post.date}</span>
-                    </div>
-                </div>
+            <div className='favorite'>
+                <FavoriteIcon 
+                className='likeIcon' 
+                onClick={likeHandler}
+                fontSize='large'/>
+                <span className='likeNumber'>{like}</span>
+            </div>
+            
+            <div className='favorite'>
+                <ThumbDownAltIcon fontSize='large' className='likeIcon' onClick={dislikeHandler}/>
+                <span className='likeNumber'>{dislike}</span>
             </div>
 
+            <div className='favorite'>
+                <CommentIcon fontSize='large' className='likeIcon'/>
+                <span className='likeNumber'>{post.comment}</span>
+            </div>
             
         </div>
+
+        <div className='postBottomRight'>
+            <span className='postText'>{post.desc}</span>
+            <span className='postDate'>{post.date}</span>
+        </div>
+
+       
+       
+                    </div>
+                </div>
+            ))}
+            
+        </div>
+
+            
+            
+
+            
+        
     )
 }

@@ -1,33 +1,49 @@
 
-import Sidebar from '../../components/sidebar/Sidebar'
-import Feed from '../../components/feed/Feed'
-import Rightbar from '../../components/rightbar/Rightbar'
-import Topbar from '../../components/topbar/Topbar'
-import {useState} from 'react'
-
+import Bottombar from "../../components/bottombar/Bottombar"
+import Header from "../../components/header/Header"
+import ChatDisplay from "./ChatDisplay"
+import StatuDisplay from "./StatuDisplay"
+import { people } from "../../People"
 import './messages.css'
-import Bottombar from '../../components/bottombar/Bottombar'
 
-export default function Messages(){
-    const [btnState, setBtnState] = useState(true);
-    function changeTopbar(){
-       setBtnState(btnState => false)
+import { useState } from "react"
+
+export default function Messages(props){
+
+    const [btnState,setBtnstate] = useState(false)
+
+    function toggleStatus(){
+        setBtnstate(btnState=>true)
     }
 
-    let topbarToggle =  btnState ? ' ' : ' explore'
+    function toggleChat(){
+        setBtnstate(btnState=>false)
+    }
+
+
+
+
+    
+    
+
+    let toggleActive = btnState ? ' active' : ''
     return(
         <div>
-            <Topbar 
-            toggle={topbarToggle}
-            logo='Sarah'/>
-            
-            <div className='homeContainer'>
-                <Sidebar/>
-                <Feed messages/>
-                <Rightbar/>
-                
+            <Header />
+
+            <div className="chatTop">
+                <span className="chatTopItem" onClick={toggleChat}>Chats</span>
+                <span className="chatTopItem" onClick={toggleStatus}>Status</span>
+                <span className="chatTopItem">Calls</span>
             </div>
-            <Bottombar change={changeTopbar}/>
+
+            <ChatDisplay 
+            active={toggleActive} 
+             
+            toggleFunction = {props.firstChatToggle}/>
+            <StatuDisplay active={toggleActive}/>
+
+            <Bottombar/>
         </div>
     )
 }

@@ -1,0 +1,40 @@
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.logo{
+    color: rgb(185, 69, 69);
+    font-size: 30px;   
+    font-family: 'Snowburst One', cursive;
+}
+.headerIcon{
+    font-size: 30px;
+}
+.headerIcon{
+    cursor: pointer;
+}
+.profileIcon{
+    height:58px;
+    border-radius: 50%;
+}
+.logoWrapper{
+    display: flex;
+    color: rgb(185, 69, 69);
+}
+
+
+
+
+
+
+
+
+
+
+
+

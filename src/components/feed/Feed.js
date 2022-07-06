@@ -19,7 +19,7 @@ import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import SendIcon from '@mui/icons-material/Send';
 import AppsIcon from '@mui/icons-material/Apps';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
-
+import image from '../../assets/persons/1.jpeg'
 //personal page Allposts
 import PersonalPosts from '../personalPosts/PersonalPosts'
 
@@ -41,7 +41,7 @@ import ShopFeed from '../shopfeed/ShopFeed'
 import ExploreFeed from '../explorefeed/ExploreFeed'
 
 //---------------------------explore page-------------------
-import MessageFeed from '../messagefeed/MessageFeed'
+
 
 
 export default function Feed({personal,stoggle,home,tmart,explore,messages}){
@@ -91,19 +91,7 @@ export default function Feed({personal,stoggle,home,tmart,explore,messages}){
         )
     }
 
-    const MessagesFeed = ()=>{
-        
-        return(
-            <div className='explore'>
-                <div className='exploreWrapper'>
-                    
-                   <MessageFeed />
-
-                    
-                </div>
-            </div>
-        )
-    }
+    
 
     const PersonalFeed = () => {
         const [btnProductState, setBtnProductState] = useState(false)
@@ -129,7 +117,8 @@ export default function Feed({personal,stoggle,home,tmart,explore,messages}){
 
                             <div className='personalDisplay'>
                                 <img alt='' 
-                                src='assets/persons/1.jpeg'
+                                src={image}
+
                                 className='personalImg'/>
                                 <span className='personalName'>
                                     Sarah Jenkins
@@ -236,9 +225,7 @@ export default function Feed({personal,stoggle,home,tmart,explore,messages}){
         else if(tmart){
             return(<MartFeed/>)
         }
-        else if(messages){
-            return(<MessagesFeed/>)
-        }
+        
         else{
             return(<Home/>)
         }

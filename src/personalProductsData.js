@@ -1,9 +1,18 @@
+
+import image1 from './assets/products/1.jpg'
+import image2 from './assets/products/2.jpg'
+import image3 from './assets/products/3.jpg'
+import image4 from './assets/products/4.jpg'
+import image5 from './assets/products/5.jpg'
+import image6 from './assets/products/6.jpg'
+
+
 export const PersonalProductsData = [
     {
         id:1,
         
         desc:'so cute!!!',
-        photo:'assets/products/1.jpg',
+        photo:image1,
         date:'10hrs ago',
         userId:1,
         like:2,
@@ -14,7 +23,7 @@ export const PersonalProductsData = [
     {
         id:2,
         desc:'Lover of good food',
-        photo:'assets/products/2.jpg',
+        photo:image2,
         date:'2weeks ago',
         userId:2,
         like:2,
@@ -24,7 +33,7 @@ export const PersonalProductsData = [
     {
         id:3,
         desc:'in the Gymmmmm',
-        photo:'assets/products/3.jpg',
+        photo:image3,
         date:'1minute ago',
         userId:3,
         like:822,
@@ -34,7 +43,7 @@ export const PersonalProductsData = [
     {
         id:4,
         desc:'work smarter',
-        photo:'assets/products/4.jpg',
+        photo:image4,
         date:'3days ago',
         userId:4,
         like:56,
@@ -44,7 +53,7 @@ export const PersonalProductsData = [
     {
         id:5,
         desc:'lover of jelly fishes!!',
-        photo:'assets/products/5.jpg',
+        photo:image5,
         date:'1hr ago',
         userId:5,
         like:772,
@@ -54,7 +63,7 @@ export const PersonalProductsData = [
     {
         id:6,
         desc:'Religion over all',
-        photo:'assets/products/6.jpg',
+        photo:image6,
         date:'10hrs ago',
         userId:6,
         like:32,

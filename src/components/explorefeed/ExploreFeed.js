@@ -7,12 +7,12 @@ import Kettle from '../video/kettle.mp4'
 import Street from '../video/street.mp4'
 import Woman from '../video/woman.mp4'
 
-import image2 from '../assets/posts/9.jpeg'
-import image3 from '../assets/posts/10.jpeg'
-import image4 from '../assets/posts/11.jpeg'
-import image5 from '../assets/posts/1.jpeg'
-import image6 from '../assets/posts/2.jpeg'
-import image7 from '../assets/posts/3.jpeg'
+import image2 from '../../assets/posts/9.jpeg'
+import image3 from '../../assets/posts/10.jpeg'
+import image4 from '../../assets/posts/11.jpeg'
+import image5 from '../../assets/posts/1.jpeg'
+import image6 from '../../assets/posts/2.jpeg'
+import image7 from '../../assets/posts/3.jpeg'
 
 
 

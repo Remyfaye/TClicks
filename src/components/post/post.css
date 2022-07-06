@@ -8,6 +8,7 @@
     box-shadow: 0 0 3px 0 rgba(0,0,0.12);
     padding: 10px;
     border-radius: 4px;
+    position: relative;
     
 }
 .postTop{
@@ -34,14 +35,20 @@
     font-weight: bold;
 }
 .postDate{
-    font-family: 'Blaka', cursive;
+    font-family: 'poppins', sans-serif;
     font-size: 13px;
-    margin: 0 10px;
+    margin: 10px;
+    text-align: end;
+    text-decoration: solid;
 }
 
 .postBottomLeft{
     display: flex;
-   
+    position: absolute;
+    flex-direction: column;
+    bottom: 20px;
+    right: 10px;
+    
 }
 .likeIcon{
     font-size: 30px;
@@ -49,6 +56,9 @@
 .favorite{
     margin-right: 40px;
     position: relative;
+    margin: 20px;
+    color: #fff;
+    padding: 15px 0;
 }
 .likeNumber{
     position: absolute;
@@ -58,15 +68,20 @@
     padding: 2px 3px;
     color: #fff;
 }
-
-
-.postCenter{
-    margin: 20px 0;
-    display:flex;
+.postBottomRight{
+    display: flex;
+    position: absolute;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    bottom: 20px;
+    width: 70%;
+    box-shadow: 0 0 8px 2px rgba(0,0,0.36);
+    color: #fff;
+    background-color: #0e00004d;
+    border-radius: 10px;
+    padding: 19px 10px;
 }
+
+
 
 .postImg{
     
@@ -78,8 +93,10 @@
 
 .postBottom{
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
+    
 }
 
 
@@ -96,15 +113,17 @@
 }
 .postImg{
     max-height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     
 }
 .postWrapper{
+    height: 72vh;
     padding: 10px;
     margin: 20px;
     margin-bottom: calc(40px + 40px);
     margin-top: -60px;
-   
+    background-size: cover;
+    background-position: center;
 } 
 .postCenter{
     margin: 10px 10px;
