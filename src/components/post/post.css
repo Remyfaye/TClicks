@@ -41,7 +41,7 @@
     position: absolute;
     flex-direction: column;
     bottom: 20px;
-    right: -6px;
+    right: 0;
     
 }
 .likeIcon{
@@ -112,10 +112,10 @@
 }
 .postWrapper{
     box-shadow: 0 0 3px 0 rgba(0,0,0.12);
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     position: relative;
-    height: 70vh;
+    height: 72vh;
     left: 0;
     margin-left: -7px;
     width: 100%;
