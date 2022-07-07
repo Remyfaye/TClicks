@@ -6,16 +6,18 @@ import image3 from './assets/persons/3.jpeg'
 import image4 from './assets/persons/4.jpeg'
 import image5 from './assets/persons/5.jpeg'
 
-import postimg1 from './assets/posts/1.jpeg'
+import postimg1 from './assets/posts/6.jpeg'
 import postimg2 from './assets/posts/2.jpeg'
 import postimg3 from './assets/posts/3.jpeg'
 import postimg4 from './assets/posts/4.jpeg'
 import postimg5 from './assets/posts/5.jpeg'
+import postimg6 from './assets/posts/1.jpeg'
 
 
 
 export const people = [
     {
+        id:1,
         name: 'tommy sins',
         url:image2,
         desc:"im fun loving and easy going",
@@ -24,6 +26,7 @@ export const people = [
         message:'hello dear'
     },
     {
+        id:2,
         name: 'jenny sandra',
         url:image3,
         desc:"free tonight??",
@@ -32,6 +35,7 @@ export const people = [
         message:'how was your night'
     },
     {
+        id:3,
         name: 'talor launter',
         url:image4,
         desc:"How was your day?",
@@ -40,6 +44,7 @@ export const people = [
         message:'can i call you?'
     },
     {
+        id:4,
         link:"/taylor",
         message:'im good. how was your day?'
     }
@@ -47,7 +52,7 @@ export const people = [
 
 export const Posts = [
     {
-        
+        id:1,
         profilePicture:image1,
         username:'Jenny flint',
         desc:'So cute!!! this is Your sign to get Down to the animal shelter and adopt a puppy',
@@ -65,13 +70,14 @@ export const Posts = [
         desc:'Lover of good food',
         photo:postimg2,
         date:'2weeks ago',
-        
+        id:2,
         like:2,
         dislike:0,
         comment:60
     },
     
     {
+        id:3,
         profilePicture:image3,
         username:'Cassy adams',
         desc:'in the Gymmmmm',
@@ -88,7 +94,7 @@ export const Posts = [
         desc:'work smarter',
         photo:postimg4,
         date:'3days ago',
-        
+        id:4,
         like:56,
         dislike:12,
         comment:213
@@ -99,7 +105,7 @@ export const Posts = [
         desc:'lover of jelly fishes!!',
         photo:postimg5,
         date:'1hr ago',
-        
+        id:5,
         like:772,
         dislike:104,
         comment:221
@@ -108,9 +114,9 @@ export const Posts = [
         profilePicture:image1,
         username:'benny dough',
         desc:'Religion over all',
-        photo:postimg1,
+        photo:postimg6,
         date:'10hrs ago',
-        
+        id:6,
         like:32,
         dislike:10,
         comment:435

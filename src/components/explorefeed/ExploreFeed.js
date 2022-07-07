@@ -5,7 +5,7 @@ import ExploreDisplay from './ExploreDisplay'
 import Post from '../post/Post'
 import Kettle from '../video/kettle.mp4'
 import Street from '../video/street.mp4'
-import Woman from '../video/woman.mp4'
+import Woman from '../../video/woman.mp4'
 
 import image2 from '../../assets/posts/9.jpeg'
 import image3 from '../../assets/posts/10.jpeg'
