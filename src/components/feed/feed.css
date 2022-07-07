@@ -19,7 +19,10 @@
         padding: 0;
     }
     
-    
+    .feed{
+        flex: 4.5;
+        
+    }
 }
 
 

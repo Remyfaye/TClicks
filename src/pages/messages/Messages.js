@@ -39,7 +39,7 @@ export default function Messages(props){
 
             <ChatDisplay 
             active={toggleActive} 
-             
+             className='chatDisplayWrapper'
             toggleFunction = {props.firstChatToggle}/>
             <StatuDisplay active={toggleActive}/>
 

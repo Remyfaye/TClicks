@@ -30,19 +30,21 @@
     display: flex;
     cursor: pointer;
     justify-content: space-between;
-    margin: 5px;
+    
     align-items: center;
 }
 .chatRight{
     margin: 20px;
+    text-align: end;
     color: rgb(167, 142, 142);
 }
 .usernameitem{
-    margin-left: 0px;
+    margin-bottom: 0;
     text-transform: capitalize;
     text-align: start;
     
 }
+
 .usermessage{
     text-align: start;
     margin-top: 5px;
@@ -51,11 +53,9 @@
 .chatInfo{
     display: flex;
     flex-direction: column;
+
     
-    
-   
-    
-    margin: 15px 15px;
+    margin: 5px 10px;
 }
 .chatLink{
     text-decoration: none;
@@ -69,6 +69,7 @@
 .statusTop{
     display: flex;
     align-items: center;
+    
 }
 .statusTopRight{
     text-align: start;
@@ -85,7 +86,10 @@
 .statusWrapper.active{
     display: block;
 }
-
+.statusTopDate{
+    color: #dbcaca;
+   
+}
 /*======================chatscreen========================*/
 .messageSender{
     display: flex;
