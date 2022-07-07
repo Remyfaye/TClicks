@@ -1,5 +1,5 @@
 
-import Kettle from '../video/kettle.mp4'
+
 import PlayCircleFilledRoundedIcon from '@mui/icons-material/PlayCircleFilledRounded';
 
 export default function ExploreDisplay(props){
