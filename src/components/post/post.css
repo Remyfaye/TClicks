@@ -100,7 +100,7 @@
 }
 
 
-@media screen and (max-width:600px){
+
 .post{
     box-shadow: 0px 0px 13px -7px rgba(0,0,0,0.53);
     width: 100%;
@@ -116,7 +116,7 @@
     
 }
 .postWrapper{
-    height: 77vh;
+    height: 75vh;
     
     
     margin-bottom: calc(40px + 40px);
@@ -129,7 +129,7 @@
    
 }   
     
-}
+
 
 
 
