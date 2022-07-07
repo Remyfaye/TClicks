@@ -13,16 +13,16 @@
     border-radius: 15px;
     width: 148px;
     cursor: pointer;
-    
+    object-fit: cover;
+    object-position: center;
 }    
 .exploreTop{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.exploreTopRight{
-    
-}
+ 
+
 .exploreFeed{
     margin-top: -70px;
     margin-bottom: calc(40px + 40px);

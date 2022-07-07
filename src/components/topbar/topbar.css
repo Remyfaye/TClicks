@@ -163,6 +163,7 @@
     }
     .topbarContainer{
         background-color: #fff;
+        position: sticky;
         margin-bottom: 10px;
         display:flex;
         padding: 4px;

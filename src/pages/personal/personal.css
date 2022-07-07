@@ -73,9 +73,14 @@
 }
 /*-------------------bottom------------*/ 
 .personalBottom{
-    display:flex;
-    flex-wrap: wrap;
-    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-right:18px ;
+   margin-left: -18px;
+   padding: -24px;
+   overflow-x:scroll;
 }   
 .bottomPost{
     visibility: hidden;
